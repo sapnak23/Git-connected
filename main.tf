@@ -1,4 +1,8 @@
+provider "azurerm" {
+  features {}
+}
+
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-ha-infra"
-  location = var.location
+  name     = "sapna-ha-rg"
+  location = "eastus"
 }
